@@ -9,3 +9,14 @@
       - route: $HOST.$DOMAIN/static
     memory: 128M
     buildpack: staticfile_buildpack
+
+  env_type: PRODUCTION
+  IBM_CLOUD_REGION: eu-de
+  IBM_CLOUD_GROUP: Default
+  IBM_CLOUD_SPACE: djangoserver-space
+  IBM_CLOUD_ORG: Sebastian.Rokholt@ibm.com
+  MANIFEST_NAME: manifest.yml
+  IBM_CLOUD_API: IBM_CLOUD_API_KEY  # retrieved from IBM Cloud Application instance
+  SECRET_KEY: SECRET_KEY
+  WATSON_NLU_API_KEY: 6qRFfPe3fZmRbt3i8AFM4aEL9w4Y0-6mPy_4I4V_OCVJ
+  WATSON_NLU_URL: https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/5a6fe8e0-e965-421b-9569-b1561c6a458a
